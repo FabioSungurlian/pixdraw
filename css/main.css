@@ -1,0 +1,103 @@
+body {
+    background: lightgrey;
+  }
+  col {
+    /*width: calc((100vw - 40px) / 200);*/
+  }
+  td, tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  td {
+    background: #ffffff;
+    position: relative;
+    width: calc((100vw - 40px) / 200);
+  }
+  td:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+  }
+  td div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  /*tr {
+    height: calc((100vw - 40px) / 100);
+  }*/
+  table {
+    border-spacing: 0;
+    max-width: calc(80vw - 40px);
+    max-height: calc(80vh - 40px);
+    margin: 20px;
+    border: 1px solid white;
+  }
+  .context-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 2px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #efefef;
+    color: #333;
+    padding: 10px;
+    display: none;
+  }
+  .context-menu input[type="color"] {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+    margin: 0.1em auto;
+    cursor: pointer;
+  }
+  .context-menu input[type="number"] {
+    max-width: 4em;
+    height: 1.2em;
+    font-size: 1.5em;
+  }
+  .context-menu input[type="number"]::placeholder {
+    font-size: 0.5em;
+  }
+  .context-menu .tools {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .context-menu li {
+    background: white;
+    padding: 0.1em 0.5em;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  .context-menu li:hover {
+    background: #cccccc;
+  }
+  .context-menu li:active {
+    background: #bbbbbb;
+  }
+  .context-menu p{
+    text-align: center;
+    font-size: 1.25em;
+    border-bottom: 2px solid white;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+  }
+  .context-menu p.nota{
+    display: inline;
+    font-size: 0.9em;
+    border-bottom: 0;
+    border-left: 5px solid hsl(34, 100%, 62%);
+    background: hsla(34, 100%, 62%, 0.2);
+    padding: 0.1em 0.2em;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+  }
